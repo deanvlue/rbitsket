@@ -2,9 +2,10 @@
 
 <h1>Listing Listings</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
+      <th>&nbsp;</th>
       <th>Name</th>
       <th>Description</th>
       <th>Price</th>
@@ -15,6 +16,7 @@
   <tbody>
     <% @listings.each do |listing| %>
       <tr>
+        <td><%= image_tag(listing.image_url) %></td>
         <td><%= listing.name %></td>
         <td><%= listing.description %></td>
         <td><%= listing.price %></td>

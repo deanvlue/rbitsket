@@ -13,3 +13,26 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.navbar-inverse {
+  background-color: #a81c37;
+  background-image: linear-gradient(to bottom,#a81c37 0,#a81c37 100%);
+  background-repeat: repeat-x;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.6);
+  z-index: 999;
+  color: #fff;
+}
+
+.navbar-brand{
+  padding: 2px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #f3f3f3;
+}
+
+
+
+.img_logo{
+  width: 30%;
+}

@@ -5,11 +5,10 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag "favicon.ico" %>
 </head>
 <body>
 <%= render 'layouts/header' %>
-<%= link_to "Acerca De", pages_about_path %>
-<%= link_to "Contacto", pages_contact_path %>
 <%= yield %>
 
 </body>

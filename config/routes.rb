@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'store/index'
+
   resources :listings
 
   get 'pages/about'
@@ -10,7 +12,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  root 'listings#index'
+  # root 'listings#index'
+   root "store#index",as: 'store'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
