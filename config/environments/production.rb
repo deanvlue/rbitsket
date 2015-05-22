@@ -76,4 +76,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+  #needed fore deivse
+  config.action_mailer.default_url_options = { host: 'bitsket.com.mx', port: 3000 }
 end
