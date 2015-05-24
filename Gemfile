@@ -48,3 +48,5 @@ end
 gem 'devise'
 
 gem 'paperclip'
+
+gem 'font-awesome-sass', '~> 4.3.0'

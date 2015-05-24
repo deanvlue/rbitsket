@@ -11,14 +11,19 @@
  * file per style scope.
  *
  */
+/*$grid-float-breakpoint: 900px;  */
+//= require devise/new
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 .navbar-inverse {
   background-color: #a81c37;
   //background-image: linear-gradient(to bottom,#a81c37 0,#a81c37 100%);
   //background-repeat: repeat-x;
-  box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+  box-shadow: 0px 5px 8px rgba(0,0,0,0.5);
   //z-index: 999;
   color: #fff;
   border-color: #a81c37;
@@ -37,53 +42,49 @@
 }
 
 
-
 .img_logo{
   width: 30%;
 }
 
-@media screen and (max-width: $screen-lg){
-  .navbar{height: 70px;}
-  .img_logo{ width: 40%;}
+
+@media screen and (min-width: $screen-lg){
+  .navbar{
+    height: 70px;
+  }
+
+  .img_logo{
+      width: 40%;
+  }
+
+  body{
+    margin-top: 75px;
+  }
 
 }
 
-@media (max-width: $screen-md){
-  .navbar{height: 210px;}
-  .container{
-    width: 100%;
-    font-size: 4em;
+
+@media (min-width:$screen-sm) and (max-width: $screen-lg){
+
+  body{
+    padding-top: 155px;
+    margin-top:5px;
+    /*background-color: #F00*/
   }
 
-  .input-lg{
-    height: 1.65em;
-    font-size: 0.4em;
-  }
-
-  .btn{
-    width: 100%;
-    font-size: 0.5em;
-  }
-
-  .img_logo{ 
-    padding-top: 0px;
-    width: 130%;
-  
-  }
-  li{
+ 
+  .navbar{height: 150px;
     font-size: 3em;
-   }
-   
-  .dropdown-toggle{
-    margin-top: 40px;
   }
 
-  .btn-group{
-    font-size:4em; 
+  .img_logo{
+    width: 80%;
   }
-}
+  
+  ul.nav.navbar-nav{
+    margin-top: 35px;
+  }
 
-.btn-group{
-  margin-top: 10px;
-  padding-bottom: 5px;
+  .container{
+  width: 100%
+  }
 }
