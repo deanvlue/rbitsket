@@ -7,7 +7,7 @@
     
   <div class="row">
       <div class="col-md-3 col-sm-3">
-        <%= image_tag avatar_url(resource) %>
+        <%= image_tag avatar_url(resource), class: "img_user" %>
       </div>
       <div class="col-md-9 col-sm-9">
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
