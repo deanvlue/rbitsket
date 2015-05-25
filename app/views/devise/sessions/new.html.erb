@@ -1,19 +1,4 @@
  <div class="container">
-
-         <form class="form-signin">
-           <h2 class="form-signin-heading">Please sign in</h2>
-           <label for="inputEmail" class="sr-only">Email address</label>
-           <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-           <label for="inputPassword" class="sr-only">Password</label>
-           <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-           <div class="checkbox">
-             <label>
-               <input type="checkbox" value="remember-me"> Remember me
-             </label>
-           </div>
-           <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-         </form>
-
       <div class="panel panel-success">
         <div class="panel-heading">
           <h1 class="form-signin-heading">Ingresa a Bitsket</h1>
@@ -21,27 +6,15 @@
             <div class="alert alert-danger"><%= alert %></div>
           <% end %>
         </div>
-            <ul class="list-group">
-              <%= form_for(resource, as: resource_name, url: session_path(resource_name), class:"form-signin") do |f| %>
-                <li class="list-group-item">
-                  <div class="field">
-                    <%= f.email_field :email, autofocus: true, class: "form-control", placeholder:"mcdinero@bitsket.com.mx" %>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="field">
-                    <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder:"Password" %>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="actions">
-                    <%= f.submit "Ingresa", class: "btn btn-lg btn-primary btn-block"%>
-                  </div>
-                <% end %>
-                </li>
-            </ul>
+        <div class="panel-body">
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name), :html=>{:class =>"form-signin"}) do |f| %>
+          <%= f.email_field :email, autofocus: true, class: "form-control", placeholder:"mcdinero@bitsket.com.mx" %>
+          <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder:"Password" %>
+          <%= f.submit "Ingresa", class: "btn btn-lg btn-primary btn-block"%>
+        <% end %>
       </div>
- </div> <!-- /container -->
+  </div>
+</div> <!-- /container -->
 
 
 

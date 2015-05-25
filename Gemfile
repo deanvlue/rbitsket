@@ -50,3 +50,4 @@ gem 'devise'
 gem 'paperclip'
 
 gem 'font-awesome-sass', '~> 4.3.0'
+gem 'http_accept_language'
